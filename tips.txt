@@ -1,0 +1,37 @@
+﻿#git&&github
+
+1、查看当前项目状态，是否有更改的文件需要提交
+git status
+2、提交文件到缓存区
+git add <file>
+2.1、清楚缓存
+git rm --cached <file>
+3、提交代码
+git commit -m 'commit message(any word)'
+
+4、设置邮箱,如果需要临时用别的邮箱，去掉global
+git config --global user.name "lvlanqiu"
+git config --global user.email "lvlanqiu@163.com"
+
+5、本地未创建项目，关联远程repository，生成master分支,该命令自动生成项目文件夹
+git clone <address like git@github.com:Lvlanqiu/Louis.git>
+6、本地已创建项目，关联远程repository
+git remote add origin <address like git@github.com:Lvlanqiu/Louis.git>
+
+7、提交本地已经commit的项目
+git push origin master
+8、将远程代码更新到本地
+git pull origin master
+9、如果本地删除了文件，则git pull不起作用，前行下载远程代码到本地，若本地文件存在，则会替换本地文件
+git reset --hard origin/master
+
+10、查看分支
+git branch
+11、创建分支，但不会改变当前活动分支
+git branch <name> 
+12、创建分支并切换到新分支
+git checkout -b <name>
+13、切换分支
+git checkout <name>
+14、打版本
+git tag <tag name like v1.0>

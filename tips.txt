@@ -8,6 +8,8 @@ git add <file>
 git rm --cached <file>
 3、提交代码
 git commit -m 'commit message(any word)'
+3.1、查看commit日志
+git log
 
 4、设置邮箱,如果需要临时用别的邮箱，去掉global
 git config --global user.name "lvlanqiu"
